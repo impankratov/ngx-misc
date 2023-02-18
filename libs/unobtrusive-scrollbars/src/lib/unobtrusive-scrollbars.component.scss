@@ -1,0 +1,7 @@
+// Make sure scrollbars check won't cause content re-flow
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

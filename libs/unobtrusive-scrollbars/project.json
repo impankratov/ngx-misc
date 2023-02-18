@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/unobtrusive-scrollbars",
+  "sourceRoot": "libs/unobtrusive-scrollbars/src",
+  "prefix": "ngm",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/unobtrusive-scrollbars"],
+      "options": {
+        "project": "libs/unobtrusive-scrollbars/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/unobtrusive-scrollbars/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/unobtrusive-scrollbars/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/unobtrusive-scrollbars"],
+      "options": {
+        "jestConfig": "libs/unobtrusive-scrollbars/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/unobtrusive-scrollbars/src/**/*.ts",
+          "libs/unobtrusive-scrollbars/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

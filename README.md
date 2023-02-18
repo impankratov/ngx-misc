@@ -1,4 +1,9 @@
-# NgxMisc
+# ngx-misc
+
+Collection of handy Angular packages.
+
+Packages:
+- [unobtrusive-scrollbars](./libs/unobtrusive-scrollbars/README.md) - helps to handle obtrusive browser scrollbars
 
 This project was generated using [Nx](https://nx.dev).
 

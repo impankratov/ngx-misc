@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/dropzone-overlay",
+  "sourceRoot": "libs/dropzone-overlay/src",
+  "prefix": "ngm",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/dropzone-overlay"],
+      "options": {
+        "project": "libs/dropzone-overlay/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/dropzone-overlay/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/dropzone-overlay/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/dropzone-overlay"],
+      "options": {
+        "jestConfig": "libs/dropzone-overlay/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/dropzone-overlay/src/**/*.ts",
+          "libs/dropzone-overlay/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

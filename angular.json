@@ -3,6 +3,7 @@
   "projects": {
     "demo": "apps/demo",
     "demo-e2e": "apps/demo-e2e",
+    "dropzone-overlay": "libs/dropzone-overlay",
     "unobtrusive-scrollbars": "libs/unobtrusive-scrollbars"
   }
 }

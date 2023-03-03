@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ngx-misc/dropzone-overlay": ["libs/dropzone-overlay/src/index.ts"],
       "@ngx-misc/unobtrusive-scrollbars": [
         "libs/unobtrusive-scrollbars/src/index.ts"
       ]

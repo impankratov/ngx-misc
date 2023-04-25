@@ -4,7 +4,8 @@ Collection of handy Angular packages.
 
 Packages:
 - [unobtrusive-scrollbars](./libs/unobtrusive-scrollbars/README.md) - helps to handle obtrusive browser scrollbars
-- [dropzone-overlay](./libs/dropzone-overlay/README.md) - handle drag & drop events with reactive forms
+- [dropzone-overlay](./libs/dropzone-overlay/README.md) - handle global drag & drop events using overlay with reactive forms
+- [file-drag-and-drop](./libs/file-drag-and-drop/README.md) - handle drag & drop events on custom dropzone with reactive forms
 
 This project was generated using [Nx](https://nx.dev).
 

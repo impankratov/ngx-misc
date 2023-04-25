@@ -4,6 +4,7 @@
     "demo": "apps/demo",
     "demo-e2e": "apps/demo-e2e",
     "dropzone-overlay": "libs/dropzone-overlay",
+    "file-drag-and-drop": "libs/file-drag-and-drop",
     "unobtrusive-scrollbars": "libs/unobtrusive-scrollbars"
   }
 }

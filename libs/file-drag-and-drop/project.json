@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/file-drag-and-drop",
+  "sourceRoot": "libs/file-drag-and-drop/src",
+  "prefix": "ngm",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/file-drag-and-drop"],
+      "options": {
+        "project": "libs/file-drag-and-drop/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/file-drag-and-drop/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/file-drag-and-drop/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/file-drag-and-drop"],
+      "options": {
+        "jestConfig": "libs/file-drag-and-drop/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/file-drag-and-drop/src/**/*.ts",
+          "libs/file-drag-and-drop/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
